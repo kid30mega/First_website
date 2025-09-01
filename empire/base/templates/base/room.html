@@ -6,9 +6,14 @@
   <title>Document</title>
 </head>
 <body>
-    {% include "base/navbar.html" %}
+    {% extends "base/main.html" %}
+
+    {%block content %}
+
 
     <h1>Room systems</h1>
+    
+    {% endblock %}
   
 </body>
 </html>
