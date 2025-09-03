@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="<en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empire</title>
-</head>
-<body>
-  {% include 'base/navbar.html' %}
+{%extends "base/main.html" %}
+{% block content %}
 
-  <h1>Choose your system</h1>
-</body>
-</html>
+<h1>Home Template</h1>
+
+<div>
+  <div>
+    {% for room in rooms %}
+
+    <div>
+      <h5>{{room.id}} -- {{room.name}}</h5>
+    </div>
 
 
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{% endblock content %}
 
